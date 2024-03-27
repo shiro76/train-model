@@ -1,3 +1,6 @@
+from data_prep import alpaca_prompt
+from load_model import tokenizer
+from train_model import model
 from unsloth import FastLanguageModel
 
 # alpaca_prompt = Copied from above
