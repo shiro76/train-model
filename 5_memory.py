@@ -1,4 +1,5 @@
 from train_model import trainer
+import torch
 
 #@title Show current memory stats
 gpu_stats = torch.cuda.get_device_properties(0)
