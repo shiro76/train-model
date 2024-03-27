@@ -1,7 +1,6 @@
 from trl import SFTTrainer
 from transformers import TrainingArguments
-from load_model import model 
-from load_model import tokenizer
+from load_model import model, max_seq_length, tokenizer
 from data_prep import dataset
 
 trainer = SFTTrainer(
