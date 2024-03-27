@@ -1,4 +1,4 @@
-
+from unsloth import FastLanguageModel
 #add LoRA adapters
 model = FastLanguageModel.get_peft_model(
     model,
