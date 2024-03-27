@@ -8,11 +8,14 @@ FastLanguageModel.for_inference(model) # Enable native 2x faster inference
 inputs = tokenizer(
 [
     alpaca_prompt.format(
-        "Continue the fibonnaci sequence.", # instruction
-        "1, 1, 2, 3, 5, 8", # input
+        "structure pour les texte de Dragon Ball Online.", # instruction
+        "", # input
         "", # output - leave this blank for generation!
     )
 ], return_tensors = "pt").to("cuda")
 
 outputs = model.generate(**inputs, max_new_tokens = 64, use_cache = True)
-tokenizer.batch_decode(outputs)
+
+# Decode and print the output
+decoded_output = tokenizer.batch_decode(outputs)
+print(decoded_output)
