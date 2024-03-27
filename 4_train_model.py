@@ -1,6 +1,7 @@
 from trl import SFTTrainer
 from transformers import TrainingArguments
-from load_model import model, max_seq_length, tokenizer
+from load_model import max_seq_length, tokenizer
+from add_LoRa_adapter import model
 from data_prep import dataset
 import torch
 
