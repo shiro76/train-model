@@ -1,3 +1,5 @@
+from unsloth import FastLanguageModel
+
 # alpaca_prompt = Copied from above
 FastLanguageModel.for_inference(model) # Enable native 2x faster inference
 inputs = tokenizer(
