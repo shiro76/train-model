@@ -1,6 +1,5 @@
 # Importer les bibliothèques nécessaires
-from unsloth import FastLanguageModel
-from transformers import AutoTokenizer
+from load_model import tokenizer
 
 #data prep
 alpaca_prompt = """Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request.
