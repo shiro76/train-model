@@ -2,6 +2,7 @@ from trl import SFTTrainer
 from transformers import TrainingArguments
 from load_model import model, max_seq_length, tokenizer
 from data_prep import dataset
+import torch
 
 trainer = SFTTrainer(
     model = model,
