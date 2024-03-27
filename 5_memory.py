@@ -1,3 +1,5 @@
+from train-model import trainer
+
 #@title Show current memory stats
 gpu_stats = torch.cuda.get_device_properties(0)
 start_gpu_memory = round(torch.cuda.max_memory_reserved() / 1024 / 1024 / 1024, 3)
