@@ -8,7 +8,7 @@ FastLanguageModel.for_inference(model) # Enable native 2x faster inference
 inputs = tokenizer(
 [
     alpaca_prompt.format(
-        "structure pour les texte de Dragon Ball Online.", # instruction
+        "donne moi la structure pour les texte de Dragon Ball Online.", # instruction
         "", # input
         "", # output - leave this blank for generation!
     )
